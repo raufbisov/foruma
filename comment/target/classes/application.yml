@@ -1,17 +1,15 @@
 spring:
     application:
-        name: auth
+        name: comment
     datasource:
-        url: jdbc:postgresql://localhost:5432/auth
+        url: jdbc:postgresql://localhost:5432/comment
         username: postgres
         password: '0000'
     jpa:
         show-sql: true
         hibernate:
             ddl-auto: update
-logging:
-    level:
-        root: WARN
+
 eureka:
     client:
         service-url:
@@ -19,8 +17,5 @@ eureka:
         fetch-registry: true
         register-with-eureka: true
 
-jwt:
-    secret: "e30b806a93780d26fe0ecd5991b46a8df036b8faf22ffdf17f69b9b0299cd94d" 
-
 server:
-    port: 8081
+    port: 8083
