@@ -12,6 +12,8 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+  rabbitmq:
+    addresses: localhost:5672
 
 logging:
   level:
