@@ -1,19 +1,29 @@
-{
-	"properties": [
-		{
-			"name": "rabbitmq.routing-keys.internal-notification",
-			"type": "java.lang.String",
-			"description": "A description for 'rabbitmq.routing-keys.internal-notification'"
-		},
-		{
-			"name": "rabbitmq.exchanges.internal",
-			"type": "java.lang.String",
-			"description": "A description for 'rabbitmq.exchanges.internal'"
-		},
-		{
-			"name": "rabbitmq.queue.notification",
-			"type": "java.lang.String",
-			"description": "A description for 'rabbitmq.queue.notification'"
-		}
-	]
-}
+{"properties": [
+  {
+    "name": "rabbitmq.routing-keys.internal-notification",
+    "type": "java.lang.String",
+    "description": "A description for 'rabbitmq.routing-keys.internal-notification'"
+  },
+  {
+    "name": "rabbitmq.exchanges.internal",
+    "type": "java.lang.String",
+    "description": "A description for 'rabbitmq.exchanges.internal'"
+  },
+  {
+    "name": "rabbitmq.queue.notification",
+    "type": "java.lang.String",
+    "description": "A description for 'rabbitmq.queue.notification'"
+  },
+  {
+    "name": "rabbitmq.queue.interaction",
+    "type": "java.lang.String",
+    "description": "A description for 'rabbitmq.queue.interaction'"
+  },
+  {
+    "name": "rabbitmq.routing-keys.internal-interaction",
+    "type": "java.lang.String",
+    "description": "A description for 'rabbitmq.routing-keys.internal-interaction'"
+  }
+]}    "description": "A description for 'rabbitmq.routing-keys.internal-interaction'"
+  }
+]}

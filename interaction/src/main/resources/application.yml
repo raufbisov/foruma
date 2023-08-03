@@ -28,6 +28,6 @@ rabbitmq:
   exchanges:
     internal: internal.exchange
   queue:
-    notification: interaction.queue
+    interaction: interaction.queue
   routing-keys:
-    internal-notification: internal.interaction.routing-key
+    internal-interaction: internal.interaction.routing-key
