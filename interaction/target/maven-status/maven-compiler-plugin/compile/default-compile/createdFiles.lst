@@ -1,0 +1,8 @@
+com/raufbisov/interaction/InteractionController.class
+com/raufbisov/interaction/InteractionResponse.class
+com/raufbisov/interaction/InteractionService.class
+com/raufbisov/interaction/Interaction$InteractionBuilder.class
+com/raufbisov/interaction/ContentType.class
+com/raufbisov/interaction/InteractionApplication.class
+com/raufbisov/interaction/Interaction.class
+com/raufbisov/interaction/InteractionRepository.class

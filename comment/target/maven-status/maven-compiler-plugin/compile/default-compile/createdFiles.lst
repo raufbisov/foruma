@@ -1,0 +1,8 @@
+com/raufbisov/comment/CommentService.class
+com/raufbisov/comment/CreateCommentRequest.class
+com/raufbisov/comment/Comment$CommentBuilder.class
+com/raufbisov/comment/Comment.class
+com/raufbisov/comment/CommentRepository.class
+com/raufbisov/comment/CommentController.class
+com/raufbisov/comment/CommentApplication.class
+com/raufbisov/comment/exception/CommentNotFoundException.class

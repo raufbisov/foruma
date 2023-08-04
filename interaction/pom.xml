@@ -26,14 +26,6 @@
 	<name>
 		interaction
 	</name>
-	<properties>
-		<maven.compiler.source>
-			17
-		</maven.compiler.source>
-		<maven.compiler.target>
-			17
-		</maven.compiler.target>
-	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>
@@ -94,4 +86,16 @@
 			</scope>
 		</dependency>
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>
+					org.apache.maven.plugins
+				</groupId>
+				<artifactId>
+					maven-compiler-plugin
+				</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 </project>

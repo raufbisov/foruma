@@ -1,0 +1,7 @@
+/home/raufbisov/Projects/foruma/comment/src/main/java/com/raufbisov/comment/Comment.java
+/home/raufbisov/Projects/foruma/comment/src/main/java/com/raufbisov/comment/CommentController.java
+/home/raufbisov/Projects/foruma/comment/src/main/java/com/raufbisov/comment/CreateCommentRequest.java
+/home/raufbisov/Projects/foruma/comment/src/main/java/com/raufbisov/comment/CommentApplication.java
+/home/raufbisov/Projects/foruma/comment/src/main/java/com/raufbisov/comment/CommentRepository.java
+/home/raufbisov/Projects/foruma/comment/src/main/java/com/raufbisov/comment/exception/CommentNotFoundException.java
+/home/raufbisov/Projects/foruma/comment/src/main/java/com/raufbisov/comment/CommentService.java

@@ -1,0 +1,11 @@
+/home/raufbisov/Projects/foruma/post/src/main/java/com/raufbisov/post/PostRepository.java
+/home/raufbisov/Projects/foruma/post/src/main/java/com/raufbisov/post/Category.java
+/home/raufbisov/Projects/foruma/post/src/main/java/com/raufbisov/post/exception/ErrorResponse.java
+/home/raufbisov/Projects/foruma/post/src/main/java/com/raufbisov/post/PostService.java
+/home/raufbisov/Projects/foruma/post/src/main/java/com/raufbisov/post/PostCreateRequest.java
+/home/raufbisov/Projects/foruma/post/src/main/java/com/raufbisov/post/PostController.java
+/home/raufbisov/Projects/foruma/post/src/main/java/com/raufbisov/post/PostUpdateRequest.java
+/home/raufbisov/Projects/foruma/post/src/main/java/com/raufbisov/post/PostApplication.java
+/home/raufbisov/Projects/foruma/post/src/main/java/com/raufbisov/post/exception/UserNotFoundException.java
+/home/raufbisov/Projects/foruma/post/src/main/java/com/raufbisov/post/Post.java
+/home/raufbisov/Projects/foruma/post/src/main/java/com/raufbisov/post/exception/GlobalExceptionHandler.java
