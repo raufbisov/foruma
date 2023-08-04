@@ -28,12 +28,12 @@ services:
     networks:
       - postgres
     restart: unless-stopped
-  rabbitmq:
-    image: rabbitmq:management-alpine
-    container_name: rabbitmq
-    ports:
-      - "5672:5672"
-      - "15672:15672"
+  # rabbitmq:
+  #   image: rabbitmq:management-alpine
+  #   container_name: rabbitmq
+  #   ports:
+  #     - "5672:5672"
+  #     - "15672:15672"
 
 networks:
   postgres:
