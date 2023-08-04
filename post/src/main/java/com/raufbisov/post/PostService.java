@@ -71,7 +71,7 @@ public class PostService {
   }
 
   public ResponseEntity<String> likePost(String id, String header) {
-    authClient.validateToken(header).getBody();
+    authClient.validateToken(header);
     if (
       interactionClient.interactionExists(
         id,
@@ -88,6 +88,27 @@ public class PostService {
         header
       );
       return ResponseEntity.ok("Liked Post");
+    }
+  }
+
+  public ResponseEntity<String> savePost(String id, String header) {
+    authClient.validateToken(header);
+    if (
+      interactionClient.interactionExists(
+        id,
+        InteractionType.SAVE.name(),
+        header
+      )
+    ) {
+      interactionClient.uninteract(id, InteractionType.SAVE.name(), header);
+      return ResponseEntity.ok("Unsaved Post");
+    } else {
+      String userId = authClient.getUserId(header).getBody();
+      interactionClient.interact(
+        new InteractionRequest(userId, id, "SAVE", InteractionType.SAVE.name()),
+        header
+      );
+      return ResponseEntity.ok("Saved Post");
     }
   }
 }

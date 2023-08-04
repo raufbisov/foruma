@@ -43,11 +43,19 @@ public class CommentController {
     return commentService.deleteComment(id, header);
   }
 
-  @GetMapping("/{id}")
+  @GetMapping("/{id}/like")
   public ResponseEntity<String> likeComment(
     @PathVariable("id") String id,
     @RequestHeader("Authorization") String header
   ) {
     return commentService.likeComment(id, header);
+  }
+
+  @GetMapping("/{id}/save")
+  public ResponseEntity<String> saveComment(
+    @PathVariable("id") String id,
+    @RequestHeader("Authorization") String header
+  ) {
+    return commentService.saveComment(id, header);
   }
 }

@@ -66,4 +66,31 @@ public class CommentService {
       );
     }
   }
+
+  @Transactional
+  public ResponseEntity<String> saveComment(String id, String header) {
+    authClient.validateToken(header);
+    if (
+      interactionClient.interactionExists(
+        id,
+        InteractionType.SAVE.name(),
+        header
+      )
+    ) {
+      interactionClient.uninteract(id, InteractionType.SAVE.name(), header);
+      return ResponseEntity.ok("Unsaved comment");
+    } else {
+      String userId = authClient.getUserId(header).getBody();
+      interactionClient.interact(
+        new InteractionRequest(
+          userId,
+          id,
+          "COMMENT",
+          InteractionType.SAVE.name()
+        ),
+        header
+      );
+      return ResponseEntity.ok("Saved comment");
+    }
+  }
 }
