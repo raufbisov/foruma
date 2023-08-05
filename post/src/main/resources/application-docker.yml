@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: post
+  datasource:
+    url: jdbc:postgresql://forumadb:5432/post
+    username: postgres
+    password: "0000"
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
+
+server:
+  port: 8082

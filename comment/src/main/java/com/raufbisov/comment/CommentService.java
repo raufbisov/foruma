@@ -60,10 +60,11 @@ public class CommentService {
       return ResponseEntity.ok("Disliked comment");
     } else {
       String userId = authClient.getUserId(header).getBody();
-      return interactionClient.interact(
+      interactionClient.interact(
         new InteractionRequest(userId, id, "COMMENT", "LIKE"),
         header
       );
+      return ResponseEntity.ok("Liked comment");
     }
   }
 

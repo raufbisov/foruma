@@ -105,7 +105,7 @@ public class PostService {
     } else {
       String userId = authClient.getUserId(header).getBody();
       interactionClient.interact(
-        new InteractionRequest(userId, id, "SAVE", InteractionType.SAVE.name()),
+        new InteractionRequest(userId, id, "POST", InteractionType.SAVE.name()),
         header
       );
       return ResponseEntity.ok("Saved Post");

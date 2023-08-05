@@ -12,8 +12,8 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-  rabbitmq:
-    addresses: localhost:5672
+  # rabbitmq:
+  #   addresses: localhost:5672
 
 logging:
   level:
@@ -25,11 +25,10 @@ eureka:
       defaultZone: http://localhost:8761/eureka
     fetch-registry: true
     register-with-eureka: true
-
-rabbitmq:
-  exchanges:
-    internal: internal.exchange
-  queue:
-    interaction: interaction.queue
-  routing-keys:
-    internal-interaction: internal.interaction.routing-key
+# rabbitmq:
+#   exchanges:
+#     internal: internal.exchange
+#   queue:
+#     interaction: interaction.queue
+#   routing-keys:
+#     internal-interaction: internal.interaction.routing-key
